@@ -5,6 +5,7 @@ Making a new userbenchmark
 indian man: https://www.youtube.com/watch?v=uwtHLEKCLaU
 -https://www.thepythoncode.com/article/send-receive-files-using-sockets-python
 -https://stackoverflow.com/questions/56830434/c-sharp-get-total-usage-of-gpu-in-percentage
+-https://gist.github.com/willtownes/2762ba1dd73fb03ecdb24d625aa27b58
 
 # Pyinstaller info
 pip install pyinstaller, 
