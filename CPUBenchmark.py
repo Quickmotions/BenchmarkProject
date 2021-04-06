@@ -2,6 +2,7 @@ import psutil
 from cpuinfo import get_cpu_info
 import multiprocessing
 import platform
+import csv
 score = 1
 num = 2
 scores = []
@@ -20,20 +21,29 @@ for x in range(1000):
         
     cpu = 0
     score = 0
-finalScore = sum(scores) / len(scores)
+cpuScore = sum(scores) / len(scores)
 print("done")
 print()
 print(platform.processor())
 ("----------------------------------")
-print("CPU final score average: ", finalScore)
+print("CPU final score average: ", cpuScore)
 print("----------------------------------")
 print("type 1 to view technical cpu info")
 request = input("type 2 to see all scores: ")
+benchmarkID = "Placeholder"
+gpuScore = 9.99
+storageScore = 9.99
+ramScore = 9.99
+overallScore = 9.99
+
+with open('data_container.csv', 'a', newline ='') as x:
+    file_writer = csv.writer(x)
+    file_writer.writerow([benchmarkID,cpuScore,gpuScore,storageScore,ramScore,overallScore])
+
 if request == "2":
     print(scores)
 if request == "1":
     print(get_cpu_info())
-
 
 
 

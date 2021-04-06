@@ -1,13 +1,12 @@
 import csv
 
-benchmarkID = ""
-cpu_score = 0.0
-gpu_score = 0.0
-storage_score = 0.0
-ram_score = 0.0
-oversll_score = 0.0
+benchmarkID = "Placeholder"
+cpu_score = 9.99
+gpu_score = 9.99
+storage_score = 9.99
+ram_score = 9.99
+overall_score = 9.99
 
-with open('data_container.csv', 'w', newline ='') as x:
-    fieldnames = ['CPU Score', 'GPU Score', 'Storage Score', 'RAM Score', 'Overall Score']
-    file_writer = csv.writer(x, fieldnames=fieldnames)
-    file_writer.writeheader()
+with open('data_container.csv', 'a', newline ='') as x:
+    file_writer = csv.writer(x)
+    file_writer.writerow([benchmarkID,cpu_score,gpu_score,storage_score,ram_score,overall_score])
