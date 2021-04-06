@@ -1,4 +1,3 @@
-benchmarkID,CPU Score,GPU Score,Storage Score,RAM Score,Overall Score
-Placeholder,9.99,9.99,9.99,9.99,9.99
-Placeholder,9.99,9.99,9.99,9.99,9.99
-Placeholder,443.344,9.99,9.99,9.99,9.99
+benchmarkID,CPU Score,GPU Score,Storage Score,RAM Score,Overall Score, CPU Model
+Placeholder,483.092,9.99,9.99,9.99,9.99,Intel(R) Core(TM) i9-9900K CPU @ 3.60GHz
+Placeholder,458.902,9.99,9.99,9.99,9.99,Intel(R) Core(TM) i9-9900K CPU @ 3.60GHz
