@@ -1,3 +1,5 @@
-BenchmarkID,CPU Score,GPU Score,Storage Score,RAM Score,Overall Score, CPU Model
-Placeholder,483.092,9.99,9.99,9.99,9.99,Intel(R) Core(TM) i9-9900K CPU @ 3.60GHz
-Placeholder,458.902,9.99,9.99,9.99,9.99,Intel(R) Core(TM) i9-9900K CPU @ 3.60GHz
+BenchmarkID,System,CPU Score,GPU Score,Storage Score,RAM Score,Overall Score, CPU Model
+Placeholder,,483.092,9.99,9.99,9.99,9.99,Intel(R) Core(TM) i9-9900K CPU @ 3.60GHz
+Placeholder,,458.902,9.99,9.99,9.99,9.99,Intel(R) Core(TM) i9-9900K CPU @ 3.60GHz
+Placeholder,,716.204,9.99,9.99,9.99,9.99,AMD Ryzen 7 5800HS with Radeon Graphics
+<function machine at 0x00000228FD805EE0>,<function system at 0x00000228FD805CA0>,394.197,9.99,9.99,9.99,9.99,AMD Ryzen 7 5800HS with Radeon Graphics

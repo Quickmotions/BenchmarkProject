@@ -1,12 +1,11 @@
 #---------------------------
-#       07/04/21
+#       05/04/21
 #   Singlecore CPU
 #       Benchmark
 #   F Haak, C Gourlay
 #---------------------------
 import psutil
 from cpuinfo import get_cpu_info
-import multiprocessing
 import platform
 import csv
 score = 1
@@ -31,7 +30,8 @@ cpuScore = sum(scores) / len(scores)
 print("done")
 print()
 print(platform.processor())
-benchmarkID = "Placeholder"
+benchmarkID = platform.machine
+system = platform.system
 gpuScore = 9.99
 storageScore = 9.99
 ramScore = 9.99
@@ -40,7 +40,7 @@ cpuDetails = get_cpu_info()['brand_raw']
 
 with open('data_container.csv', 'a', newline ='') as x:
     file_writer = csv.writer(x)
-    file_writer.writerow([benchmarkID,cpuScore,gpuScore,storageScore,ramScore,overallScore,cpuDetails])
+    file_writer.writerow([benchmarkID,system,cpuScore,gpuScore,storageScore,ramScore,overallScore,cpuDetails])
 
 ("----------------------------------")
 print("CPU final score average: ", cpuScore)
