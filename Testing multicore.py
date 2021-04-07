@@ -6,7 +6,7 @@ def do_something(): #spend 1 sec
     time.sleep(1)
     print('done sleeping...')
     
-if __name__ == '__main__': #used to allow or prevent parts of code from being run when the modules are imported.
+if __name__ == '__main__':
     start = time.perf_counter()
 
     p1 = multiprocessing.Process(target=do_something) #creates first procces
@@ -18,9 +18,9 @@ if __name__ == '__main__': #used to allow or prevent parts of code from being ru
     p1.join() #stops code until process is finnished
     p2.join() #stops code until process is finnished
 
-    finnish = time.perf_counter()
+    finish = time.perf_counter()
 
-    print(f'Finnished in {round(finnish-start, 2)} second(s)') 
-    
+    print(f'Finished in {round(finish-start, 2)} second(s)') 
+
 
 #here we run both tasks at once so that it only takes 1 sec instead of 2 since do_somthing is running in parrallel
