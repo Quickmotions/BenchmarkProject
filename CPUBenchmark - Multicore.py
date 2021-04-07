@@ -30,28 +30,27 @@ def SingleBench():
 
 
 
-
+if __name__ == '__main__':
 
 print("Starting multi-core benchmark on: ", get_cpu_info()['brand_raw'])
+    cpuScore = sum(scores) / len(scores)
+    print("done")
+    print()
+    print(platform.processor())
+    benchmarkID = "Placeholder"
+    gpuScore = 9.99
+    storageScore = 9.99
+    ramScore = 9.99
+    overallScore = 9.99
+    cpuDetails = get_cpu_info()['brand_raw']
 
-cpuScore = sum(scores) / len(scores)
-print("done")
-print()
-print(platform.processor())
-benchmarkID = "Placeholder"
-gpuScore = 9.99
-storageScore = 9.99
-ramScore = 9.99
-overallScore = 9.99
-cpuDetails = get_cpu_info()['brand_raw']
+    with open('data_container.csv', 'a', newline ='') as x:
+        file_writer = csv.writer(x)
+        file_writer.writerow([benchmarkID,cpuScore,gpuScore,storageScore,ramScore,overallScore,cpuDetails])
 
-with open('data_container.csv', 'a', newline ='') as x:
-    file_writer = csv.writer(x)
-    file_writer.writerow([benchmarkID,cpuScore,gpuScore,storageScore,ramScore,overallScore,cpuDetails])
-
-("----------------------------------")
-print("CPU final score average: ", cpuScore)
-print("----------------------------------")
+    ("----------------------------------")
+    print("CPU final score average: ", cpuScore)
+    print("----------------------------------")
 # print("type 1 to view technical cpu info")
 # request = input("type 2 to see all scores: ")
 # if request == "2":
