@@ -1,8 +1,3 @@
-benchmarkID,system,timeTaken,cpuScore,gpuScore,storageScore,ramScore,overallScore,cpuDetails
-1.9422E+14,Windows,19 seconds,632.23,9.99,9.99,9.99,9.99,AMD Ryzen 7 5800HS with Radeon Graphics
-1.9422E+14,Windows,19 seconds,682.579,9.99,9.99,9.99,9.99,AMD Ryzen 7 5800HS with Radeon Graphics
-194220047236855,Windows,20 seconds,678.347,9.99,9.99,9.99,9.99,AMD Ryzen 7 5800HS with Radeon Graphics
-194220047236855,Windows,"(19.7914, ' Seconds')",669.932,9.99,9.99,9.99,9.99,AMD Ryzen 7 5800HS with Radeon Graphics
-194220047236855,Windows,"(19.7765, ' Seconds')",678.817,9.99,9.99,9.99,9.99,AMD Ryzen 7 5800HS with Radeon Graphics
-194220047236855,Windows,"(17.8186, ' Seconds')",654.262,2089.864158829676,9.99,9.99,9.99,9.99,AMD Ryzen 7 5800HS with Radeon Graphics
-194220047236855,Windows,"(17.5029, ' Seconds')",655.076,6565.988181221273,9.99,9.99,9.99,9.99,AMD Ryzen 7 5800HS with Radeon Graphics
+benchmarkID,system,timeTaken,singleCpuScore,multiCpuScore,gpuScore,storageScore,ramScore,overallScore,cpuDetails
+1.9422E+14,Windows,"(17.8186, ' Seconds')",654.262,2089.864159,9.99,9.99,9.99,9.99,AMD Ryzen 7 5800HS with Radeon Graphics
+1.9422E+14,Windows,"(17.5029, ' Seconds')",655.076,6565.988181,9.99,9.99,9.99,9.99,AMD Ryzen 7 5800HS with Radeon Graphics
