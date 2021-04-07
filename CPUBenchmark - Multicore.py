@@ -1,6 +1,6 @@
 #---------------------------
 #       07/04/21
-#   Singlecore CPU
+#   Multicore CPU
 #       Benchmark
 #   F Haak, C Gourlay
 #---------------------------
