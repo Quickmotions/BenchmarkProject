@@ -1,1 +1,3 @@
 BenchmarkID,System,CPU Score,GPU Score,Storage Score,RAM Score,Overall Score, CPU Model
+AMD64,Windows,487.198,9.99,9.99,9.99,9.99,Intel(R) Core(TM) i9-9900K CPU @ 3.60GHz
+AMD64,Windows,791.895,9.99,9.99,9.99,9.99,Intel(R) Core(TM) i9-9900K CPU @ 3.60GHz
