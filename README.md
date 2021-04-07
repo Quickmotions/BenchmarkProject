@@ -16,6 +16,7 @@ pip install pyinstaller,
 cd into file location, 
 then pyinstaller --onefile (to get all in one exe) -w (to remove console if you have ui) file_name.py
 https://pypi.org/project/pyinstaller/
+
 # Python Packages:
 -https://pypi.org/project/psutil/
 -https://pypi.org/project/cmdbench/
