@@ -30,8 +30,8 @@ cpuScore = sum(scores) / len(scores)
 print("done")
 print()
 print(platform.processor())
-benchmarkID = platform.machine
-system = platform.system
+benchmarkID = platform.machine()
+system = platform.system()
 gpuScore = 9.99
 storageScore = 9.99
 ramScore = 9.99
