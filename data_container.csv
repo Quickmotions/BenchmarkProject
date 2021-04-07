@@ -1,3 +1,8 @@
 benchmarkID,system,timeTaken,singleCpuScore,multiCpuScore,gpuScore,storageScore,ramScore,overallScore,cpuDetails
 1.9422E+14,Windows,"(17.8186, ' Seconds')",654.262,2089.864159,9.99,9.99,9.99,9.99,AMD Ryzen 7 5800HS with Radeon Graphics
 1.9422E+14,Windows,"(17.5029, ' Seconds')",655.076,6565.988181,9.99,9.99,9.99,9.99,AMD Ryzen 7 5800HS with Radeon Graphics
+247207026043638,Windows,"(19.3422, ' Seconds')",480.892,6553.07994757536,9.99,9.99,9.99,9.99,Intel(R) Core(TM) i9-9900K CPU @ 3.60GHz
+247207026043638,Windows,"(17.8772, ' Seconds')",461.234,1616.5535079211122,9.99,9.99,9.99,9.99,Intel(R) Core(TM) i9-9900K CPU @ 3.60GHz
+247207026043638,Windows,"(18.1988, ' Seconds')",835.196,9017.132551848512,9.99,9.99,9.99,9.99,Intel(R) Core(TM) i9-9900K CPU @ 3.60GHz
+247207026043638,Windows,"(17.9173, ' Seconds')",896.213,9009.009009009009,9.99,9.99,9.99,9.99,Intel(R) Core(TM) i9-9900K CPU @ 3.60GHz
+247207026043638,Windows,"(18.2099, ' Seconds')",820.655,46948.35680751174,9.99,9.99,9.99,9.99,Intel(R) Core(TM) i9-9900K CPU @ 3.60GHz

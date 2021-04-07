@@ -47,7 +47,7 @@ if __name__ == '__main__':
     mNext = 10
 
     for core in range(100):                                            #the underscore signifies a throw away variable one which is discarded and not stored
-        p = multiprocessing.Process(target=multiProcess, args=[10])  #create 10 processes in a array named processes and tell it how many seconds to take.
+        p = multiprocessing.Process(target=multiProcess, args=[1])  #create 10 processes in a array named processes and tell it how many seconds to take.
         p.start()                                                   #starts all 10 processes
         processes.append(p)                                         #adds this process to the list
         if core == mNext:
