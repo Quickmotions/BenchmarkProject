@@ -32,7 +32,7 @@ if __name__ == '__main__':
         score = 0
     cpuScore = sum(scores) / len(scores)
     print("done")
-    timeTaken = '{} seconds'.format(round(time.time() - starttime), 4)
+    timeTaken = round((time.time() - starttime), 4), ' Seconds'
     print('Time taken = ', timeTaken)
     print()
     print(platform.processor())

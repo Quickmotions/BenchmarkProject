@@ -15,7 +15,7 @@ if __name__ == '__main__':
     p1.start()
     p2.start()#starts both processes at same time does not wait to continue onto rest of code
 
-    p1.join() #stops code until process is finnished
+    p1.join() 
     p2.join() #stops code until process is finnished
 
     finish = time.perf_counter()
