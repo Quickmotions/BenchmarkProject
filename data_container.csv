@@ -2,3 +2,5 @@ benchmarkID,system,timeTaken,cpuScore,gpuScore,storageScore,ramScore,overallScor
 1.9422E+14,Windows,19 seconds,632.23,9.99,9.99,9.99,9.99,AMD Ryzen 7 5800HS with Radeon Graphics
 1.9422E+14,Windows,19 seconds,682.579,9.99,9.99,9.99,9.99,AMD Ryzen 7 5800HS with Radeon Graphics
 194220047236855,Windows,20 seconds,678.347,9.99,9.99,9.99,9.99,AMD Ryzen 7 5800HS with Radeon Graphics
+194220047236855,Windows,"(19.7914, ' Seconds')",669.932,9.99,9.99,9.99,9.99,AMD Ryzen 7 5800HS with Radeon Graphics
+194220047236855,Windows,"(19.7765, ' Seconds')",678.817,9.99,9.99,9.99,9.99,AMD Ryzen 7 5800HS with Radeon Graphics

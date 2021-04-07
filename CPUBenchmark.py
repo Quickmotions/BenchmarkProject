@@ -9,6 +9,7 @@ from cpuinfo import get_cpu_info
 import platform
 from uuid import getnode as get_mac
 import time
+import multiprocessing
 import csv
 score = 1
 num = 2
@@ -35,6 +36,17 @@ if __name__ == '__main__':
     timeTaken = round((time.time() - starttime), 4), ' Seconds'
     print('Time taken = ', timeTaken)
     print()
+    print("Starting multi-core benchmark on: ", get_cpu_info()['brand_raw'])
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    #results
     print(platform.processor())
     benchmarkID = get_mac()
     system = platform.system()
@@ -43,7 +55,7 @@ if __name__ == '__main__':
     ramScore = 9.99
     overallScore = 9.99
     cpuDetails = get_cpu_info()['brand_raw']
-
+    
     with open('data_container.csv', 'a', newline ='') as x:
         file_writer = csv.writer(x)
         file_writer.writerow([benchmarkID,system,timeTaken,cpuScore,gpuScore,storageScore,ramScore,overallScore,cpuDetails])
