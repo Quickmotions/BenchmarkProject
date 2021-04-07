@@ -8,6 +8,7 @@ import psutil
 from cpuinfo import get_cpu_info
 import platform
 from uuid import getnode as get_mac
+import time
 import csv
 score = 1
 num = 2
@@ -16,6 +17,7 @@ next = 100
 if __name__ == '__main__':
     print("Starting single-core benchmark on: ", get_cpu_info()['brand_raw'])
     cpu = psutil.cpu_percent(interval=0.0000001)
+    starttime = time.time()
     for x in range(1000):
         while cpu < 50:
             cpu = psutil.cpu_percent(interval=0.0)
@@ -30,6 +32,8 @@ if __name__ == '__main__':
         score = 0
     cpuScore = sum(scores) / len(scores)
     print("done")
+    timeTaken = '{} seconds'.format(time.time() - starttime)
+    print('Time taken = ', timeTaken)
     print()
     print(platform.processor())
     benchmarkID = get_mac()
@@ -42,9 +46,9 @@ if __name__ == '__main__':
 
     with open('data_container.csv', 'a', newline ='') as x:
         file_writer = csv.writer(x)
-        file_writer.writerow([benchmarkID,system,cpuScore,gpuScore,storageScore,ramScore,overallScore,cpuDetails])
+        file_writer.writerow([benchmarkID,system,timeTaken,cpuScore,gpuScore,storageScore,ramScore,overallScore,cpuDetails])
 
-    ("----------------------------------")
+    print("----------------------------------")
     print("CPU final score average: ", cpuScore)
     print("----------------------------------")
 # print("type 1 to view technical cpu info")
