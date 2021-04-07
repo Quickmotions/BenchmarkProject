@@ -7,6 +7,7 @@ indian man: https://www.youtube.com/watch?v=uwtHLEKCLaU
 -https://stackoverflow.com/questions/56830434/c-sharp-get-total-usage-of-gpu-in-percentage
 -https://gist.github.com/willtownes/2762ba1dd73fb03ecdb24d625aa27b58
 -https://github.com/emiliocolo/memory-stress-test
+-https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g
 
 # Multi-proccessing tutorial
 https://www.youtube.com/watch?v=fKl2JW_qrso
