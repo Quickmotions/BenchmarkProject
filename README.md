@@ -8,6 +8,9 @@ indian man: https://www.youtube.com/watch?v=uwtHLEKCLaU
 -https://gist.github.com/willtownes/2762ba1dd73fb03ecdb24d625aa27b58
 -https://github.com/emiliocolo/memory-stress-test
 
+# Multi-proccessing tutorial
+https://www.youtube.com/watch?v=fKl2JW_qrso
+
 # Pyinstaller info
 pip install pyinstaller, 
 cd into file location, 
