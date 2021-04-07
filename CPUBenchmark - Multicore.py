@@ -23,10 +23,15 @@ for x in range(1000):
     scores.append(score)
     if x == next:
         print(next / 10, "% done")
-        next += 100
-        
+        next += 100 
     cpu = 0
     score = 0
+
+
+
+
+
+
 cpuScore = sum(scores) / len(scores)
 print("done")
 print()
