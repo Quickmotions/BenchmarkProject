@@ -7,6 +7,7 @@
 import psutil
 from cpuinfo import get_cpu_info
 import platform
+from uuid import getnode as get_mac
 import csv
 score = 1
 num = 2
@@ -31,7 +32,7 @@ print("done")
 print()
 print(platform.processor())
 benchmarkID = platform.machine()
-system = platform.system()
+system = get_mac()
 gpuScore = 9.99
 storageScore = 9.99
 ramScore = 9.99
