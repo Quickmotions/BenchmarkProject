@@ -76,7 +76,7 @@ if __name__ == '__main__':
     
     with open('data_container.csv', 'a', newline ='') as x:
         file_writer = csv.writer(x)
-        file_writer.writerow([benchmarkID,system,timeTaken,singleCPUScore,multiCPUScore,gpuScore,storageScore,ramScore,overallScore,cpuDetails])
+        file_writer.writerow([benchmarkID,system,singleCPUScore,multiCPUScore,gpuScore,storageScore,ramScore,overallScore,cpuDetails])
 
     print("----------------------------------")
     print("CPU single-core score: ", singleCPUScore)
