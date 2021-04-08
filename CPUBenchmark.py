@@ -11,13 +11,30 @@ import time
 import multiprocessing
 import csv
 import math
+multicoreScores = 0
 score = 1
 num = 2
 scores = []
 sNext = 100
-
-def multiProcess(seconds): #spend 1 sec
-    time.sleep(seconds)
+def multiProcess(): #starts process on single core
+    scores = []
+    score = 1
+    cpu = psutil.cpu_percent(interval=0.0000001)
+    for _ in range(1000):
+        while cpu < 50:
+            cpu = psutil.cpu_percent(interval=0.0)
+            num = 2**score
+            score += 1
+        scores.append(score)
+        cpu = 0
+        score = 0
+    value = 0
+    value += math.floor(sum(scores) / len(scores))
+    addScores(value)
+    
+def addScores(value):
+    global multicoreScores
+    multicoreScores = multicoreScores + value
 
 if __name__ == '__main__':
     #singleprocessing
@@ -33,9 +50,9 @@ if __name__ == '__main__':
         if x == sNext:
             print(sNext / 10, "% done")
             sNext += 100
-            
         cpu = 0
         score = 0
+    
     singleCPUScore = math.floor(sum(scores) / len(scores)) #math.floor rounds down
     print("done")
     timeTaken = round((time.time() - starttime), 4), ' Seconds'
@@ -43,30 +60,26 @@ if __name__ == '__main__':
     print()
     
     #multiprocessing
-    #multiprocessing.cpu_count()
-    print("Starting multi-core benchmark on: ", get_cpu_info()['brand_raw'])
+    cores = int(multiprocessing.cpu_count() /2)
+    print("Starting multi-core benchmark on: ", get_cpu_info()['brand_raw'], ' on ', cores, ' physical cores')
     start = time.perf_counter()
 
     processes = []
-    mNext = 10
+    
 
-    for core in range(100):                                            #the underscore signifies a throw away variable one which is discarded and not stored
-        p = multiprocessing.Process(target=multiProcess, args=[1])  #create 10 processes in a array named processes and tell it how many seconds to take.
-        p.start()                                                   #starts all 10 processes
-        processes.append(p)                                         #adds this process to the list
-        if core == mNext:
-            print(mNext, "% done")
-            mNext += 10
-
-
+    for _ in range(cores): #the underscore signifies a throw away variable one which is discarded and not stored
+        p = multiprocessing.Process(target=multiProcess, args=[]) #create 10 processes in a array named processes and tell it how many seconds to take.
+        p.start()        #starts process for each core
+        processes.append(p)       #adds this process to the list
+    
     for process in processes:
-        process.join()                                              #joins all processes so that code doesnt run past until all are done
-    
-    
+        process.join()#joins all processes so that code doesnt run past until all are done
+
     finish = time.perf_counter()
     print(f'Finished in {round(finish-start, 2)} second(s)')
-    multiTimeTaken = round(finish-start, 2)
-    multiCPUScore = math.floor(100000 / multiTimeTaken) #math.floor rounds down
+    
+    
+    multiCPUScore = multicoreScores
 
     #results
     print(platform.processor())
