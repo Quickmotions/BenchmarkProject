@@ -12,6 +12,7 @@ import multiprocessing
 from multiprocessing import Queue
 import csv
 import math
+
 multiCPUScore = 0
 score = 1
 num = 2
@@ -100,6 +101,7 @@ if __name__ == '__main__':
     print("----------------------------------")
     print("CPU multi-core score: ", multiCPUScore)
     print("----------------------------------")
+
 
 # print("type 1 to view technical cpu info")
 # request = input("type 2 to see all scores: ")
