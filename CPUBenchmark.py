@@ -9,14 +9,15 @@ import platform
 from uuid import getnode as get_mac
 import time
 import multiprocessing
+from multiprocessing import Queue
 import csv
 import math
-multicoreScores = 0
+multiCPUScore = 0
 score = 1
 num = 2
 scores = []
 sNext = 100
-def multiProcess(): #starts process on single core
+def multiProcess(queue): #starts process on single core
     scores = []
     score = 1
     cpu = psutil.cpu_percent(interval=0.0000001)
@@ -28,13 +29,9 @@ def multiProcess(): #starts process on single core
         scores.append(score)
         cpu = 0
         score = 0
-    value = 0
-    value += math.floor(sum(scores) / len(scores))
-    addScores(value)
+    queue.put(math.floor(sum(scores) / len(scores)))
+   
     
-def addScores(value):
-    global multicoreScores
-    multicoreScores = multicoreScores + value
 
 if __name__ == '__main__':
     #singleprocessing
@@ -64,22 +61,25 @@ if __name__ == '__main__':
     print("Starting multi-core benchmark on: ", get_cpu_info()['brand_raw'], ' on ', cores, ' physical cores')
     start = time.perf_counter()
 
+    queue = Queue()
     processes = []
     
 
     for _ in range(cores): #the underscore signifies a throw away variable one which is discarded and not stored
-        p = multiprocessing.Process(target=multiProcess, args=[]) #create 10 processes in a array named processes and tell it how many seconds to take.
+        p = multiprocessing.Process(target=multiProcess, args=[queue]) #create 10 processes in a array named processes and tell it how many seconds to take.
         p.start()        #starts process for each core
         processes.append(p)       #adds this process to the list
     
     for process in processes:
         process.join()#joins all processes so that code doesnt run past until all are done
 
+    while not queue.empty():
+        multiCPUScore += queue.get()
     finish = time.perf_counter()
     print(f'Finished in {round(finish-start, 2)} second(s)')
     
     
-    multiCPUScore = multicoreScores
+    
 
     #results
     print(platform.processor())
