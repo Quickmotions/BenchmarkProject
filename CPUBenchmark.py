@@ -1,7 +1,6 @@
 #---------------------------
 #       05/04/21
-#   Singlecore CPU
-#       Benchmark
+#    CPU Benchmark
 #   F Haak, C Gourlay
 #---------------------------
 import psutil
@@ -11,6 +10,7 @@ from uuid import getnode as get_mac
 import time
 import multiprocessing
 import csv
+import math
 score = 1
 num = 2
 scores = []
@@ -36,7 +36,7 @@ if __name__ == '__main__':
             
         cpu = 0
         score = 0
-    singleCPUScore = sum(scores) / len(scores)
+    singleCPUScore = math.floor(sum(scores) / len(scores)) #math.floor rounds down
     print("done")
     timeTaken = round((time.time() - starttime), 4), ' Seconds'
     print('Time taken = ', timeTaken)
@@ -66,7 +66,7 @@ if __name__ == '__main__':
     finish = time.perf_counter()
     print(f'Finished in {round(finish-start, 2)} second(s)')
     multiTimeTaken = round(finish-start, 2)
-    multiCPUScore = 100000 / multiTimeTaken
+    multiCPUScore = math.floor(100000 / multiTimeTaken) #math.floor rounds down
 
     #results
     print(platform.processor())
@@ -87,6 +87,7 @@ if __name__ == '__main__':
     print("----------------------------------")
     print("CPU multi-core score: ", multiCPUScore)
     print("----------------------------------")
+
 # print("type 1 to view technical cpu info")
 # request = input("type 2 to see all scores: ")
 # if request == "2":

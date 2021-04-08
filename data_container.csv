@@ -8,3 +8,5 @@ benchmarkID,system,singleCpuScore,multiCpuScore,gpuScore,storageScore,ramScore,o
 2.47E+14,Windows,820.655,46948.35681,9.99,9.99,9.99,9.99,Intel(R) Core(TM) i9-9900K CPU @ 3.60GHz
 1.9422E+14,Windows,1667.814,40983.60656,9.99,9.99,9.99,9.99,AMD Ryzen 7 5800HS with Radeon Graphics
 194220047236855,Windows,1562.48,43859.64912280702,9.99,9.99,9.99,9.99,AMD Ryzen 7 5800HS with Radeon Graphics
+194220047236855,Windows,598.593,14245.014245014247,9.99,9.99,9.99,9.99,AMD Ryzen 7 5800HS with Radeon Graphics
+194220047236855,Windows,669,11627,9.99,9.99,9.99,9.99,AMD Ryzen 7 5800HS with Radeon Graphics
