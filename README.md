@@ -24,3 +24,4 @@ https://pypi.org/project/pyinstaller/
 -https://pypi.org/project/cmdbench/
 -https://pypi.org/project/py-cpuinfo/
 -https://pypi.org/project/memory-profiler/
+-https://pypi.org/project/gpustat/
