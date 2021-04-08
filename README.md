@@ -8,6 +8,7 @@ indian man: https://www.youtube.com/watch?v=uwtHLEKCLaU
 -https://gist.github.com/willtownes/2762ba1dd73fb03ecdb24d625aa27b58
 -https://github.com/emiliocolo/memory-stress-test
 -https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g
+-https://www.geeksforgeeks.org/running-python-script-on-gpu/
 
 # Multi-proccessing tutorial
 https://www.youtube.com/watch?v=fKl2JW_qrso
