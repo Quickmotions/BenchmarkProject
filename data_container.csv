@@ -1,12 +1,12 @@
 benchmarkID,system,singleCpuScore,multiCpuScore,gpuScore,storageScore,ramScore,overallScore,cpuDetails
-1.94E+14,Windows,654.262,2089.864159,9.99,9.99,9.99,9.99,AMD Ryzen 7 5800HS with Radeon Graphics
-1.94E+14,Windows,655.076,6565.988181,9.99,9.99,9.99,9.99,AMD Ryzen 7 5800HS with Radeon Graphics
-2.47E+14,Windows,480.892,6553.079948,9.99,9.99,9.99,9.99,Intel(R) Core(TM) i9-9900K CPU @ 3.60GHz
-2.47E+14,Windows,461.234,1616.553508,9.99,9.99,9.99,9.99,Intel(R) Core(TM) i9-9900K CPU @ 3.60GHz
-2.47E+14,Windows,835.196,9017.132552,9.99,9.99,9.99,9.99,Intel(R) Core(TM) i9-9900K CPU @ 3.60GHz
-2.47E+14,Windows,896.213,9009.009009,9.99,9.99,9.99,9.99,Intel(R) Core(TM) i9-9900K CPU @ 3.60GHz
-2.47E+14,Windows,820.655,46948.35681,9.99,9.99,9.99,9.99,Intel(R) Core(TM) i9-9900K CPU @ 3.60GHz
-1.9422E+14,Windows,1667.814,40983.60656,9.99,9.99,9.99,9.99,AMD Ryzen 7 5800HS with Radeon Graphics
-194220047236855,Windows,1562.48,43859.64912280702,9.99,9.99,9.99,9.99,AMD Ryzen 7 5800HS with Radeon Graphics
-194220047236855,Windows,598.593,14245.014245014247,9.99,9.99,9.99,9.99,AMD Ryzen 7 5800HS with Radeon Graphics
-194220047236855,Windows,669,11627,9.99,9.99,9.99,9.99,AMD Ryzen 7 5800HS with Radeon Graphics
+1.94E+14,Windows,654,2089,9.99,9.99,9.99,9.99,AMD Ryzen 7 5800HS with Radeon Graphics
+1.94E+14,Windows,655,6565,9.99,9.99,9.99,9.99,AMD Ryzen 7 5800HS with Radeon Graphics
+2.47E+14,Windows,480,6553,9.99,9.99,9.99,9.99,Intel(R) Core(TM) i9-9900K CPU @ 3.60GHz
+2.47E+14,Windows,461,1616,9.99,9.99,9.99,9.99,Intel(R) Core(TM) i9-9900K CPU @ 3.60GHz
+2.47E+14,Windows,835,9017,9.99,9.99,9.99,9.99,Intel(R) Core(TM) i9-9900K CPU @ 3.60GHz
+2.47E+14,Windows,896,9009,9.99,9.99,9.99,9.99,Intel(R) Core(TM) i9-9900K CPU @ 3.60GHz
+2.47E+14,Windows,820,46050,9.99,9.99,9.99,9.99,Intel(R) Core(TM) i9-9900K CPU @ 3.60GHz
+1.94E+14,Windows,1667,40950,9.99,9.99,9.99,9.99,AMD Ryzen 7 5800HS with Radeon Graphics
+1.9422E+14,Windows,1562,43859,9.99,9.99,9.99,9.99,AMD Ryzen 7 5800HS with Radeon Graphics
+1.9422E+14,Windows,599,14250,9.99,9.99,9.99,9.99,AMD Ryzen 7 5800HS with Radeon Graphics
+1.9422E+14,Windows,669,11677,9.99,9.99,9.99,9.99,AMD Ryzen 7 5800HS with Radeon Graphics
