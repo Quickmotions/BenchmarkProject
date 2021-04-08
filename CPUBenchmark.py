@@ -20,6 +20,7 @@ def multiProcess(seconds): #spend 1 sec
     time.sleep(seconds)
 
 if __name__ == '__main__':
+    #singleprocessing
     print("Starting single-core benchmark on: ", get_cpu_info()['brand_raw'])
     cpu = psutil.cpu_percent(interval=0.0000001)
     starttime = time.time()
@@ -40,6 +41,9 @@ if __name__ == '__main__':
     timeTaken = round((time.time() - starttime), 4), ' Seconds'
     print('Time taken = ', timeTaken)
     print()
+    
+    #multiprocessing
+    #multiprocessing.cpu_count()
     print("Starting multi-core benchmark on: ", get_cpu_info()['brand_raw'])
     start = time.perf_counter()
 
