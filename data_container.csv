@@ -6,3 +6,4 @@ benchmarkID,system,singleCpuScore,multiCpuScore,gpuScore,storageScore,ramScore,o
 247207026043638,Windows,904,944,9.99,9.99,9.99,9.99,Intel(R) Core(TM) i9-9900K CPU @ 3.60GHz
 247207026043638,Windows,885,949,9.99,9.99,9.99,9.99,Intel(R) Core(TM) i9-9900K CPU @ 3.60GHz
 247207026043638,Windows,887,931,9.99,9.99,9.99,9.99,Intel(R) Core(TM) i9-9900K CPU @ 3.60GHz
+247207026043638,Windows,445,953,9.99,9.99,9.99,9.99,Intel(R) Core(TM) i9-9900K CPU @ 3.60GHz
