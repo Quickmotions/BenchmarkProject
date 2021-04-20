@@ -1,4 +1,4 @@
-benchmarkID,system,singleCpuScore,multiCpuScore,gpuScore,storageScore,ramScore,overallScore,cpuDetails
+benchmarkID,SystemOS,singleCpuScore,MultiCoreScore,GPUScore,StorageScore,RAMScore,OverallScore,CPUDetails
 194220047236855,Windows,808,1059,9.99,9.99,9.99,9.99,AMD Ryzen 7 5800HS with Radeon Graphics
 194220047236855,Windows,793,980,9.99,9.99,9.99,9.99,AMD Ryzen 7 5800HS with Radeon Graphics
 194220047236855,Windows,735,867,9.99,9.99,9.99,9.99,AMD Ryzen 7 5800HS with Radeon Graphics
