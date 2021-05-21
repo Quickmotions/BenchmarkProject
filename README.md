@@ -15,6 +15,10 @@ https://www.youtube.com/watch?v=fKl2JW_qrso
 
 #gpu accessing using openCL
 https://pypi.org/project/pyopencl/
+Python CUDA
+NVIDIA's CUDA Python provides a driver and runtime API for existing toolkits and libraries to simplify GPU-based accelerated processing. Python is one of the most popular programming languages for science, engineering, data analytics, and deep learning applications.
+https://developer.nvidia.com/cuda-python
+
 # Pyinstaller info
 pip install pyinstaller, 
 cd into file location, 
