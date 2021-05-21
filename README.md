@@ -18,6 +18,7 @@ https://pypi.org/project/pyopencl/
 Python CUDA
 NVIDIA's CUDA Python provides a driver and runtime API for existing toolkits and libraries to simplify GPU-based accelerated processing. Python is one of the most popular programming languages for science, engineering, data analytics, and deep learning applications.
 https://developer.nvidia.com/cuda-python
+https://www.mdpi.com/2079-3197/8/1/4/pdf
 
 # Pyinstaller info
 pip install pyinstaller, 
