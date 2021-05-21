@@ -13,6 +13,8 @@ indian man: https://www.youtube.com/watch?v=uwtHLEKCLaU
 # Multi-proccessing tutorial
 https://www.youtube.com/watch?v=fKl2JW_qrso
 
+#gpu accessing using openCL
+https://pypi.org/project/pyopencl/
 # Pyinstaller info
 pip install pyinstaller, 
 cd into file location, 
