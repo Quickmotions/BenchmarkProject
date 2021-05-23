@@ -15,6 +15,6 @@ multiCPUScore = 9.99
 singleCPUScore = 9.99
 
 # printing to file 
-with open('data_container.csv', 'a', newline ='') as x:
+with open('.../csv_files/data_container.csv', 'a', newline ='') as x:
     file_writer = csv.writer(x)
     file_writer.writerow([benchmarkID,system,singleCPUScore,multiCPUScore,gpuScore,storageScore,ramScore,overallScore,cpuDetails])
