@@ -8,4 +8,4 @@ def main():
     runMultiCPU()
     runWriteCSV(results)
 
-
+main()
