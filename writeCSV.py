@@ -15,7 +15,8 @@ multiCPUScore = 0.00
 singleCPUScore = 0.00
 
 def runWriteCSV():
+    if __name__ == '__main__':
 # printing to file 
-    with open('.../csv_files/data_container.csv', 'a', newline ='') as x:
-        file_writer = csv.writer(x)
-        file_writer.writerow([benchmarkID,system,singleCPUScore,multiCPUScore,gpuScore,storageScore,ramScore,overallScore,cpuDetails])
+        with open('.../csv_files/data_container.csv', 'a', newline ='') as x:
+            file_writer = csv.writer(x)
+            file_writer.writerow([benchmarkID,system,singleCPUScore,multiCPUScore,gpuScore,storageScore,ramScore,overallScore,cpuDetails])
