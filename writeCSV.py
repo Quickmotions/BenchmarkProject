@@ -3,18 +3,19 @@ import csv
 
 # Declaring String Variables
 benchmarkID = "Placeholder"
-system = "Jo Momma"
-cpuDetails = "Intel Core i25"
+system = "Placeholder"
+cpuDetails = "Placeholder"
 # Declaring Float Variables
-cpuScore = 9.99
-gpuScore = 9.99
-storageScore = 9.99
-ramScore = 9.99
-overallScore = 9.99
-multiCPUScore = 9.99
-singleCPUScore = 9.99
+cpuScore = 0.00
+gpuScore = 0.00
+storageScore = 0.00
+ramScore = 0.00
+overallScore = 0.00
+multiCPUScore = 0.00
+singleCPUScore = 0.00
 
+def WriteCSV():
 # printing to file 
-with open('.../csv_files/data_container.csv', 'a', newline ='') as x:
-    file_writer = csv.writer(x)
-    file_writer.writerow([benchmarkID,system,singleCPUScore,multiCPUScore,gpuScore,storageScore,ramScore,overallScore,cpuDetails])
+    with open('.../csv_files/data_container.csv', 'a', newline ='') as x:
+        file_writer = csv.writer(x)
+        file_writer.writerow([benchmarkID,system,singleCPUScore,multiCPUScore,gpuScore,storageScore,ramScore,overallScore,cpuDetails])
