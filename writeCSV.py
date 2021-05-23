@@ -1,3 +1,4 @@
+# runs the import to bring in the csv settings required
 import csv
 
 # Declaring String Variables
