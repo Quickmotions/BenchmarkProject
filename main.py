@@ -4,8 +4,8 @@ from writeCSV import runWriteCSV
 
 
 
-print("" + runSingleCPU())
-print("" + runMultiCPU())
-print("" + runWriteCSV())
+runSingleCPU()
+runMultiCPU()
+runWriteCSV()
 
 
