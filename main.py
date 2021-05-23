@@ -1,10 +1,10 @@
-import multiCPU
-import singleCPU
+from multiCPU import runMultiCPU
+from singleCPU import runSingleCPU
 import writeCSV
-import sendCSV
 
-if __name__ == '__main__':
-    singleCPU()
-    multiCPU()
-    writeCSV()
-    
+
+
+print("" + runSingleCPU())
+print("" + runMultiCPU())
+
+

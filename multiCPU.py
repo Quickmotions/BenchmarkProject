@@ -1,3 +1,3 @@
 import psutil
-def multiCPU():
-    print("works")
+def runMultiCPU():
+    return "works"

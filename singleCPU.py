@@ -1,3 +1,3 @@
 import psutil
-def singleCPU():
-    print("works")
+def runSingleCPU():
+    return "works"
