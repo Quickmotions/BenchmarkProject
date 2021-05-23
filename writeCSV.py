@@ -14,7 +14,7 @@ overallScore = 0.00
 multiCPUScore = 0.00
 singleCPUScore = 0.00
 
-def WriteCSV():
+def runWriteCSV():
 # printing to file 
     with open('.../csv_files/data_container.csv', 'a', newline ='') as x:
         file_writer = csv.writer(x)
