@@ -1,6 +1,6 @@
 def main():
     results = []
-    from getComp import runGetComp
+    from GetComp import runGetComp
     from multiCPU import runMultiCPU
     from singleCPU import runSingleCPU
     from writeCSV import runWriteCSV
