@@ -1,15 +1,6 @@
-def main():
-    results = []
-    from getComp import runGetComp
-    from multiCPU import runMultiCPU
-    from singleCPU import runSingleCPU
-    from writeCSV import runWriteCSV
-    cpuBrand, OSBrand = runGetComp()
-    results.append(cpuBrand)
-    results.append(OSBrand)
-    singleResult = runSingleCPU()
-    results.append(singleResult)
-    runMultiCPU()
-    runWriteCSV(results)
-
-main()
+def runMemoryTest():
+    from memory_profiler import memory_usage
+    mem_usage = memory_usage(-1, interval=.5, timeout=10)
+    AVGmem_usage = round(sum(mem_usage) / 20, 2)
+    score = round(10000 / AVGmem_usage)
+    return score
