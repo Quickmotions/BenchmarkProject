@@ -1,0 +1,10 @@
+-----------------------------
+IMPORT THE FOLLOWING MODULES
+using the command:
+pip install [module_name]
+-----------------------------
+
+-psutil
+-cpuinfo
+
+
