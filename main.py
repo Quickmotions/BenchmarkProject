@@ -1,10 +1,12 @@
 def main():
-    results = ["linux", "intel i8", 123, 234]
-    
+    results = []
+    from getComp import runGetComp
     from multiCPU import runMultiCPU
     from singleCPU import runSingleCPU
     from writeCSV import runWriteCSV
-    runSingleCPU()
+    cpuBrand, OSBrand = runGetComp()
+    singleResult = runSingleCPU()
+    results.append(singleResult)
     runMultiCPU()
     runWriteCSV(results)
 
