@@ -1,5 +1,4 @@
 def runSingleCPU():
-    import psutil
     import time
     import math
     starttime = time.time() # start timer
