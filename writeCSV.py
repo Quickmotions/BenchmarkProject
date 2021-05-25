@@ -45,6 +45,7 @@ def runWriteCSV(results):
         file_writer = csv.writer(file)  #select csv writer
         file_writer.writerow(results)   #write the results into the csv
        
-    encryptResults()
-    
-    print("Done")
+    encryptResults()                #encrypt the results into a diffrent csv
+    from sendCSV import runSendCSV  #import the script for sending csv to server
+    runSendCSV()    #send csv to server
+    print("Done")   #end write
