@@ -1,9 +1,8 @@
-
-
 def runWriteCSV(results):
-    # runs the import to bring in the csv settings required
-    import csv
+    
+    import csv          #import csv read/writer
+    import cryptography #import encryption package
 
-    with open('csv_files/data_container.csv', 'a', newline ='') as file:
-        file_writer = csv.writer(file) 
-        file_writer.writerow(results)
+    with open('csv_files/data_container.csv', 'a', newline ='') as file: #open/create new file
+        file_writer = csv.writer(file)  #select csv writer
+        file_writer.writerow(results)   #write the results into the csv
