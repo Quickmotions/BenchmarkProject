@@ -21,7 +21,7 @@ def main():
     results.append(memoryResult)        #store the result
     
     runMultiCPU()                       #run a multi core cpu benchmark
-                                        #store the result
+    results.append(0)#placeholder       #store the result
     
     runWriteCSV(results)                #store all the reults in the csv
 
