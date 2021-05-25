@@ -1,20 +1,30 @@
-def main():
-    results = []
+def importScripts():             #imports all scripts required
     from getComp import runGetComp
     from multiCPU import runMultiCPU
     from singleCPU import runSingleCPU
     from writeCSV import runWriteCSV
     from memoryTest import runMemoryTest
-    cpuBrand, OSBrand = runGetComp()
-    results.append(cpuBrand)
-    results.append(OSBrand)
-    singleResult = runSingleCPU()
-    results.append(singleResult)
-    memoryResult = runMemoryTest()
-    results.append(memoryResult)
-    runMultiCPU()
-    runWriteCSV(results)
+
+def main():
+    
+    results = []                        #create array for all results
+    importScripts()                     #call import scripts
+    
+    cpuBrand, OSBrand = runGetComp()    #collect all system and component imfo
+    results.append(cpuBrand)            #store cpu brand raw
+    results.append(OSBrand)             #store the operating system
+    
+    singleResult = runSingleCPU()       #run a single core cpu benchmark
+    results.append(singleResult)        #store the result
+    
+    memoryResult = runMemoryTest()      #run the memory usage test
+    results.append(memoryResult)        #store the result
+    
+    runMultiCPU()                       #run a multi core cpu benchmark
+                                        #store the result
+    
+    runWriteCSV(results)                #store all the reults in the csv
 
 
-
-main()
+if __name__ == '__main___':
+    main()  #call main to start program
