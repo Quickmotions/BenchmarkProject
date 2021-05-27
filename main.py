@@ -26,5 +26,4 @@ def main():
     runWriteCSV(results)                #store all the reults in the csv
 
 
-if __name__ == '__main___':
-    main()  #call main to start program
+main()  #call main to start program
