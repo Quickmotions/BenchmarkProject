@@ -39,7 +39,7 @@ def encryptResults(results):       #encrypt the file using fernet
         
 def runWriteCSV(results):
     import csv   #import csv read/writer
-    createKey()  #create a key and store it
+    #createKey()  #create a key and store it
     
     with open('csv_files/data_container.csv', 'a', newline ='') as file: #open/create new file
         file_writer = csv.writer(file)  #select csv writer
