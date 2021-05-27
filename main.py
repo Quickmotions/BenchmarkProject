@@ -26,4 +26,5 @@ def main():
     runWriteCSV(results)                #store all the reults in the csv
 
 
+importScripts() #imports the required scripts to start the program
 main()  #call main to start program
