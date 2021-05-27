@@ -1,14 +1,13 @@
-def importScripts():             #imports all scripts required
-    from getComp import runGetComp
-    from multiCPU import runMultiCPU
-    from singleCPU import runSingleCPU
-    from writeCSV import runWriteCSV
-    from memoryTest import runMemoryTest
+from getComp import runGetComp
+from multiCPU import runMultiCPU
+from singleCPU import runSingleCPU
+from writeCSV import runWriteCSV
+from memoryTest import runMemoryTest
 
 def main():
     
     results = []                        #create array for all results
-    importScripts()                     #call import scripts
+    #importScripts()                     #call import scripts
     
     cpuBrand, OSBrand = runGetComp()    #collect all system and component imfo
     results.append(cpuBrand)            #store cpu brand raw
@@ -26,5 +25,5 @@ def main():
     runWriteCSV(results)                #store all the reults in the csv
 
 
-importScripts() #imports the required scripts to start the program
+#importScripts() #imports the required scripts to start the program
 main()  #call main to start program
