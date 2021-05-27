@@ -10,7 +10,7 @@ def createKey():
         
         
         
-def encryptResults():       #encrypt the file using fernet
+def encryptResults(results):       #encrypt the file using fernet
     
     from cryptography.fernet import Fernet  #import encryption package
     
@@ -22,7 +22,7 @@ def encryptResults():       #encrypt the file using fernet
     fernet = Fernet(key)
 
     # opening the original file to encrypt
-    with open('nba.csv', 'rb') as file:
+    with open('csv_files/data_container.csv', 'rb') as file:
         original = file.read()
 
     # encrypting the file
@@ -45,7 +45,7 @@ def runWriteCSV(results):
         file_writer = csv.writer(file)  #select csv writer
         file_writer.writerow(results)   #write the results into the csv
        
-    encryptResults()                #encrypt the results into a diffrent csv
+    #encryptResults(results)                #encrypt the results into a diffrent csv
     from sendCSV import runSendCSV  #import the script for sending csv to server
     runSendCSV()    #send csv to server
     print("Done")   #end write
