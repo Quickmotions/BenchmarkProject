@@ -24,6 +24,6 @@ def runMultiCPU():
     print(timeTaken)
     score = round(10000 /timeTaken)
     print(score)
-    return(score)
+    return score
 
    
