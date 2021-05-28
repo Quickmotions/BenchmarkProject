@@ -1,4 +1,6 @@
+
 from getComp import runGetComp
+from multiCPU import runMultiCPU
 from singleCPU import runSingleCPU
 from writeCSV import runWriteCSV
 from memoryTest import runMemoryTest
