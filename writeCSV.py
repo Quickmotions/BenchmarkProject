@@ -23,7 +23,7 @@ def encryptResults(results):       #encrypt the file using fernet
 
     # opening the original file to encrypt
     with open('csv_files/data_container.csv', 'rb') as file:
-        original = file.read()
+        results = file.read()
 
     # encrypting the file
     encrypted = fernet.encrypt(results)
@@ -39,13 +39,13 @@ def encryptResults(results):       #encrypt the file using fernet
         
 def runWriteCSV(results):
     import csv   #import csv read/writer
-    #createKey()  #create a key and store it
+    createKey()  #create a key and store it
     
     with open('csv_files/data_container.csv', 'a', newline ='') as file: #open/create new file
         file_writer = csv.writer(file)  #select csv writer
         file_writer.writerow(results)   #write the results into the csv
        
-    #encryptResults(results)                #encrypt the results into a diffrent csv
+    encryptResults(results)                #encrypt the results into a diffrent csv
     from sendCSV import runSendCSV  #import the script for sending csv to server
     runSendCSV()    #send csv to server
     print("Done")   #end write
