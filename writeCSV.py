@@ -36,6 +36,7 @@ def encryptResults(results):       #encrypt the file using fernet
       
         
 def runWriteCSV(results):
+    print("DEBUG: begun writeCSV")
     import csv   #import csv read/writer
     createKey()  #create a key and store it
     

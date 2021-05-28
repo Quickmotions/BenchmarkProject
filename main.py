@@ -1,13 +1,13 @@
 from getComp import runGetComp
-from multiCPU import runMultiCPU
 from singleCPU import runSingleCPU
 from writeCSV import runWriteCSV
 from memoryTest import runMemoryTest
+import multiprocessing
+import time
+
 
 def main():
-    
-    results = []                        #create array for all results
-    #importScripts()                     #call import scripts
+    results = []                        #create array for all results 
     
     systemTag, system, machine, version, release, node,cpuTag, cpuBrand, physCore, allCore, maxFreq,minFreq ,memoryTag, memTotal, memUsed,storageTag, storageDevice = runGetComp()    #collect all system and component imfo
     results.append(systemTag)            #store all spec
@@ -35,8 +35,8 @@ def main():
     memoryResult = runMemoryTest()      #run the memory usage test
     results.append(memoryResult)        #store the result
     
-    multiResult = runMultiCPU()          #run a multi core cpu benchmark
-    results.append(multiResult)           #store the result
+    #multiResult = runMultiCPU()          #run a multi core cpu benchmark
+    #results.append(multiResult)           #store the result
     
     runWriteCSV(results)                #store all the reults in the csv
 

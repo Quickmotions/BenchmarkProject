@@ -1,4 +1,5 @@
 def runSingleCPU():
+    print("DEBUG: begun singleCPU")
     import time
     import math
     starttime = time.time() # start timer

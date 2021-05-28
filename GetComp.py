@@ -12,6 +12,7 @@ def get_size(bytes, suffix="B"):
         bytes /= factor
 
 def runGetComp():
+  print("DEBUG: begun getcomp")
   from cpuinfo import get_cpu_info
   import platform
   import psutil
