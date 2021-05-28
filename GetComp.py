@@ -41,4 +41,4 @@ def runGetComp():
     storageDevice = storageDevice + partition.device + ", "
     storageMount = storageMount + partition.mountpoint + ", "
 
-  return "SYSTEM:", system, machine, version, release, node,"CPU:", cpuBrand, physCore, allCore, maxFreq,minFreq ,"MEMORY:", memTotal, memUsed,"STORAGE:", storageDevice, storageMount
+  return "SYSTEM:", system, machine, version, release, node,"CPU:", cpuBrand, physCore, allCore, maxFreq,minFreq ,"MEMORY:", memTotal, memUsed,"STORAGE:", storageDevice
