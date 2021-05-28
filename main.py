@@ -35,8 +35,8 @@ def main():
     memoryResult = runMemoryTest()      #run the memory usage test
     results.append(memoryResult)        #store the result
     
-    runMultiCPU()                       #run a multi core cpu benchmark
-    results.append(0)#placeholder       #store the result
+    multiResult = runMultiCPU()          #run a multi core cpu benchmark
+    results.append(multiResult)           #store the result
     
     runWriteCSV(results)                #store all the reults in the csv
 
