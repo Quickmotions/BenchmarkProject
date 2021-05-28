@@ -32,10 +32,8 @@ def encryptResults(results):       #encrypt the file using fernet
     # writing the encrypted data
     with open('csv_files/data_container_encrypted.csv', 'wb') as encrypted_file:
         encrypted_file.write(encrypted)
-
-        
-        
-        
+    
+      
         
 def runWriteCSV(results):
     import csv   #import csv read/writer
