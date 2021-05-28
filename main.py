@@ -9,10 +9,26 @@ def main():
     results = []                        #create array for all results
     #importScripts()                     #call import scripts
     
-    cpuBrand, OSBrand = runGetComp()    #collect all system and component imfo
-    results.append(cpuBrand)            #store cpu brand raw
-    results.append(OSBrand)             #store the operating system
-    
+    systemTag, system, machine, version, release, node,cpuTag, cpuBrand, physCore, allCore, maxFreq,minFreq ,memoryTag, memTotal, memUsed,storageTag, storageDevice = runGetComp()    #collect all system and component imfo
+    results.append(systemTag)            #store all spec
+    results.append(system)
+    results.append(machine)
+    results.append(version)
+    results.append(release)
+    results.append(node)
+    results.append(cpuTag)
+    results.append(cpuBrand)
+    results.append(physCore)
+    results.append(allCore)
+    results.append(maxFreq)
+    results.append(minFreq)
+    results.append(memoryTag)
+    results.append(memTotal)
+    results.append(memUsed)
+    results.append(storageTag)
+    results.append(storageDevice)
+ 
+
     singleResult = runSingleCPU()       #run a single core cpu benchmark
     results.append(singleResult)        #store the result
     
@@ -25,5 +41,5 @@ def main():
     runWriteCSV(results)                #store all the reults in the csv
 
 
-#importScripts() #imports the required scripts to start the program
+
 main()  #call main to start program
