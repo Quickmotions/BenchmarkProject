@@ -51,8 +51,6 @@ def main():
     results.append(cpuBrand)
     results.append(physCore)
     results.append(allCore)
-    results.append(maxFreq)
-    results.append(minFreq)
     results.append(memoryTag)
     results.append(memTotal)
     results.append(memUsed)
