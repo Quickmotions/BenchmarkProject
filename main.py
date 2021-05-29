@@ -38,8 +38,9 @@ def spawnMultiProcess():
 
 def main():
     results = []                        #create array for all results 
-    
+
     systemTag, system, machine, version, release, node,cpuTag, cpuBrand, physCore, allCore,memoryTag, memTotal, memUsed,storageTag, storageDevice = runGetComp()    #collect all system and component imfo
+
     results.append(systemTag)            #store all spec
     results.append(system)
     results.append(machine)
