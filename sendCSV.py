@@ -1,2 +1,2 @@
 def runSendCSV():
-  print("sent")
+  print()

@@ -43,28 +43,28 @@ def main():
     results.append(systemTag)            #store all spec
     results.append(system)
     results.append(machine)
-    results.append(version)
+    results.append("ver: "+str(version))
     results.append(release)
     results.append(node)
     results.append(cpuTag)
-    results.append(cpuBrand)
-    results.append(physCore)
-    results.append(allCore)
+    results.append("cpu: "+str(cpuBrand))
+    results.append("physical: "+str(physCore))
+    results.append("all: "+str(allCore))
     results.append(memoryTag)
-    results.append(memTotal)
-    results.append(memUsed)
+    results.append("total: "+str(memTotal))
+    results.append("used: "+str(memUsed))
     results.append(storageTag)
     results.append(storageDevice)
 
 
     singleResult = runSingleCPU()       #run a single core cpu benchmark
-    results.append(singleResult)        #store the result
+    results.append("singleCPU: "+str(singleResult))        #store the result
     
     multiResult = spawnMultiProcess()          #run a multi core cpu benchmark
-    results.append(multiResult)           #store the result
+    results.append("multiCPU: "+str(multiResult))           #store the result
     
     memoryResult = runMemoryTest()      #run the memory usage test
-    results.append(memoryResult)        #store the result
+    results.append("memory: "+str(memoryResult))        #store the result
     
     runWriteCSV(results)                #store all the reults in the csv
 
