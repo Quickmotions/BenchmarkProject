@@ -46,5 +46,5 @@ def runWriteCSV(results):
        
     encryptResults(results)                #encrypt the results into a diffrent csv
     from sendCSV import runSendCSV  #import the script for sending csv to server
-    runSendCSV()    #send csv to server
+    #runSendCSV()    #send csv to server
     print("Done")   #end write
