@@ -33,7 +33,6 @@ def spawnMultiProcess():
             proc.join()
 
         timeTaken = round(time.perf_counter() - start, 2)
-        print(timeTaken)
         return round(10000 /timeTaken/10)
 
 def main():
