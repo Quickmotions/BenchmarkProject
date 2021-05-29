@@ -42,3 +42,31 @@ SYSTEM:,Windows,AMD64,10.0.19043,10,Callum-Desktop,CPU:,Intel(R) Core(TM) i9-990
 SYSTEM:,Windows,AMD64,10.0.19043,10,Callum-Desktop,CPU:,Intel(R) Core(TM) i9-9900K CPU @ 3.60GHz,8,16,3600.0,0.0,MEMORY:,15.93GB,8.56GB,STORAGE:,"C:\, D:\, E:\, ",5128,361
 SYSTEM:,Darwin,x86_64,Darwin Kernel Version 20.4.0: Fri Mar  5 01:14:14 PST 2021; root:xnu-7195.101.1~3/RELEASE_X86_64,20.4.0,CallumsMBP13.local,CPU:,Intel(R) Core(TM) i5-1038NG7 CPU @ 2.00GHz,4,8,2000,2000,MEMORY:,16.00GB,4.79GB,STORAGE:,"/dev/disk1s1s1, /dev/disk1s5, /dev/disk1s3, /dev/disk1s6, /dev/disk1s2, ",2720,675
 SYSTEM:,Darwin,x86_64,Darwin Kernel Version 20.5.0: Sat May  8 05:10:33 PDT 2021; root:xnu-7195.121.3~9/RELEASE_X86_64,20.5.0,CallumsMBP13.local,CPU:,Intel(R) Core(TM) i5-1038NG7 CPU @ 2.00GHz,4,8,2000,2000,MEMORY:,16.00GB,6.77GB,STORAGE:,"/dev/disk1s1s1, /dev/disk1s5, /dev/disk1s3, /dev/disk1s6, /dev/disk1s2, ",2669,677
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+5848
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+5952
+SYSTEM:,Windows,AMD64,10.0.19041,10,Zephyrus,CPU:,AMD Ryzen 7 5800HS with Radeon Graphics,8,16,3201.0,0.0,MEMORY:,15.42GB,6.79GB,STORAGE:,"C:\, ",4337,286,6250
+SYSTEM:,Windows,AMD64,10.0.19041,10,Zephyrus,CPU:,AMD Ryzen 7 5800HS with Radeon Graphics,8,16,3201.0,0.0,MEMORY:,15.42GB,6.79GB,STORAGE:,"C:\, ",4299,289,2151
+SYSTEM:,Windows,AMD64,10.0.19041,10,Zephyrus,CPU:,AMD Ryzen 7 5800HS with Radeon Graphics,8,16,3201.0,0.0,MEMORY:,15.42GB,6.89GB,STORAGE:,"C:\, ",4359,2227,287
+SYSTEM:,Windows,AMD64,10.0.19041,10,Zephyrus,CPU:,AMD Ryzen 7 5800HS with Radeon Graphics,8,16,3201.0,0.0,MEMORY:,15.42GB,6.55GB,STORAGE:,"C:\, ",4294,1031,284
+SYSTEM:,Windows,AMD64,10.0.19041,10,Zephyrus,CPU:,AMD Ryzen 7 5800HS with Radeon Graphics,8,16,3201.0,0.0,MEMORY:,15.42GB,6.52GB,STORAGE:,"C:\, ",4354,1508,142
+SYSTEM:,Windows,AMD64,10.0.19041,10,Zephyrus,CPU:,AMD Ryzen 7 5800HS with Radeon Graphics,8,16,3201.0,0.0,MEMORY:,15.42GB,6.49GB,STORAGE:,"C:\, ",418,150,286

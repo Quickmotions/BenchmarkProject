@@ -1,19 +1,21 @@
+if __name__ == '__main__':
+    try:
+        from getComp import runGetComp
+        from singleCPU import runSingleCPU
+        from writeCSV import runWriteCSV
+        from memoryTest import runMemoryTest
+        from multiprocessing import Process
+        import time
+    except:
+        print("missing packages")
+        exit()
 
-from getComp import runGetComp
-from singleCPU import runSingleCPU
-from writeCSV import runWriteCSV
-from memoryTest import runMemoryTest
-from multiprocessing import Process
-import time
+    
 def multiProcess():
-    print("done")
-    # count = 0
-    # while count < 50000: # run x amount of calculations (x can be adjusted to get diffrent scores)
-    #     piValue = 2 ** count        #(2*increasing value) increasing value increases by 1 each loop and loops for x amount
-    #     count += 1
-
-
-
+    count = 0
+    while count < 5000: # run x amount of calculations (x can be adjusted to get diffrent scores)
+         piValue = 2 ** count        #(2*increasing value) increasing value increases by 1 each loop and loops for x amount
+         count += 1
 
 def spawnMultiProcess():
     if __name__ == '__main__':  # confirms that the code is under main function
@@ -21,8 +23,7 @@ def spawnMultiProcess():
         start = time.perf_counter()
         procs = []
         # instantiating process with arguments
-        for _ in range(10): 
-
+        for _ in range(100): 
             proc = Process(target=multiProcess)
             procs.append(proc)
             proc.start()
@@ -33,7 +34,7 @@ def spawnMultiProcess():
 
         timeTaken = round(time.perf_counter() - start, 2)
         print(timeTaken)
-        return round(10000 /timeTaken)
+        return round(10000 /timeTaken/10)
 
 def main():
     results = []                        #create array for all results 
@@ -56,19 +57,19 @@ def main():
     results.append(memUsed)
     results.append(storageTag)
     results.append(storageDevice)
- 
+
 
     singleResult = runSingleCPU()       #run a single core cpu benchmark
     results.append(singleResult)        #store the result
     
-    memoryResult = runMemoryTest()      #run the memory usage test
-    results.append(memoryResult)        #store the result
-    
     multiResult = spawnMultiProcess()          #run a multi core cpu benchmark
     results.append(multiResult)           #store the result
+    
+    memoryResult = runMemoryTest()      #run the memory usage test
+    results.append(memoryResult)        #store the result
     
     runWriteCSV(results)                #store all the reults in the csv
 
 
-
-main()  #call main to start program
+if __name__ == '__main__':
+    main()  #call main to start program
