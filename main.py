@@ -3,6 +3,7 @@ from getComp import runGetComp
 from singleCPU import runSingleCPU
 from writeCSV import runWriteCSV
 from memoryTest import runMemoryTest
+<<<<<<< Updated upstream
 from multiprocessing import Process
 import time
 def multiProcess():
@@ -11,6 +12,9 @@ def multiProcess():
     # while count < 50000: # run x amount of calculations (x can be adjusted to get diffrent scores)
     #     piValue = 2 ** count        #(2*increasing value) increasing value increases by 1 each loop and loops for x amount
     #     count += 1
+=======
+
+>>>>>>> Stashed changes
 
 def spawnMultiProcess():
     if __name__ == '__main__':  # confirms that the code is under main function

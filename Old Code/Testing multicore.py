@@ -3,7 +3,7 @@ import time
 
 def do_something(): #spend 1 sec
     print('sleeping 1 second...')
-    time.sleep(1)
+    time.sleep(0.5)
     print('done sleeping...')
     
 if __name__ == '__main__':
@@ -11,7 +11,8 @@ if __name__ == '__main__':
 
     p1 = multiprocessing.Process(target=do_something) #creates first procces
     p2 = multiprocessing.Process(target=do_something) #creates second process at same time
-
+   
+    
     p1.start()
     p2.start()#starts both processes at same time does not wait to continue onto rest of code
 
