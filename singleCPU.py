@@ -16,4 +16,4 @@ def runSingleCPU():
     else:
         score = 10000
     
-    return round(score) #return the score and round to nearest whole
+    return round(score/10) #return the score and round to nearest whole
