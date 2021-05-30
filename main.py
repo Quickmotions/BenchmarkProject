@@ -5,7 +5,6 @@ try:
     from writeCSV import runWriteCSV
     from memoryTest import runMemoryTest
     from multiCPU import spawnMultiProcess
-    from tkinter import *
     import time
     
 except:
