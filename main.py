@@ -11,52 +11,12 @@ if __name__ == '__main__':
         print("missing packages")
         exit()
 
-    
-# def multiProcess():
-#     count = 0
-#     while count < 5000: # run x amount of calculations (x can be adjusted to get diffrent scores)
-#          piValue = 2 ** count        #(2*increasing value) increasing value increases by 1 each loop and loops for x amount
-#          count += 1
-
-# def spawnMultiProcess():
-#     if __name__ == '__main__':  # confirms that the code is under main function
-#         print("DEBUG: begun multiCPU")
-#         start = time.perf_counter()
-#         procs = []
-#         # instantiating process with arguments
-#         for _ in range(100): 
-#             proc = Process(target=multiProcess)
-#             procs.append(proc)
-#             proc.start()
-
-#         # complete the processes
-#         for proc in procs:
-#             proc.join()
-
-#         timeTaken = round(time.perf_counter() - start, 2)
-#         return round(10000 /timeTaken/10)
-
 def main():
     results = []                        #create array for all results 
 
     systemTag, system, machine, version, release, node,cpuTag, cpuBrand, physCore, allCore,memoryTag, memTotal, memUsed,storageTag, storageDevice = runGetComp()    #collect all system and component imfo
-
-    results.append(systemTag)            #store all spec
-    results.append(system)
-    results.append(machine)
-    results.append("ver: "+str(version))
-    results.append(release)
-    results.append(node)
-    results.append(cpuTag)
-    results.append("cpu: "+str(cpuBrand))
-    results.append("physical: "+str(physCore))
-    results.append("all: "+str(allCore))
-    results.append(memoryTag)
-    results.append("total: "+str(memTotal))
-    results.append("used: "+str(memUsed))
-    results.append(storageTag)
-    results.append(storageDevice)
-
+    compList =[systemTag, system, machine, "ver: "+str(version), release, node,cpuTag, "cpu: "+str(cpuBrand), "physical: "+str(physCore), "all: "+str(allCore),memoryTag, "total: "+str(memTotal), "used: "+str(memUsed),storageTag, storageDevice]            #store all spec
+    results += compList
 
     singleResult = runSingleCPU()       #run a single core cpu benchmark
     results.append("singleCPU: "+str(singleResult))        #store the result
@@ -68,7 +28,6 @@ def main():
     results.append("memory: "+str(memoryResult))        #store the result
     
     runWriteCSV(results)                #store all the reults in the csv
-
 
 if __name__ == '__main__':
     main()  #call main to start program
