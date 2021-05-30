@@ -1,5 +1,5 @@
-from tkinter import Label, font
 import tkinter
+from tkinter import Label, font
 from typing import NewType
 if __name__ == '__main__':
     try:
