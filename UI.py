@@ -14,28 +14,34 @@ def createUI():
     import tkinter
     from main import main
     root = tkinter.Tk()
-    frame = tkinter.Frame(root)
-    root.geometry("600x500")
-    frame.pack()
+    frame = tkinter.Frame(root, bg='lightblue')
+    root.geometry("450x200")
+    frame.pack(fill='both', expand=True)
     global labelText
-    labelText = Label(root, text="press start")
-    labelText.pack()
+    labelText = Label(root, text="press start", font=("Courier", 14), fg='blue', bg='lightblue')
+    
     button = tkinter.Button(frame, 
                     text="QUIT", 
-                    fg="red",
+                    fg="blue",
                     command=quit,
-                    width=30,
-                    height=20)
+                    width=20,
+                    height=5,
+                    bg='lightblue',
+                    font=("Courier", 14))
     
     slogan = tkinter.Button(frame,
                     text="START",
                     command= main,
-                    width=30,
-                    height=20)
+                    fg='blue',
+                    width=20,
+                    height=5,
+                    bg='lightblue',
+                    font=("Courier", 14))
     
     # if showButton == 1:
-    button.pack(side=tkinter.LEFT,)
+    button.pack(side=tkinter.RIGHT)
     slogan.pack(side=tkinter.LEFT)
+    labelText.pack(side=tkinter.TOP,fill='both')
 
     root.mainloop()
    
