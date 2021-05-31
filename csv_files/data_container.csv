@@ -60,3 +60,4 @@ SYSTEM:,Windows,AMD64,ver: 10.0.19043,10,Callum-Desktop,CPU:,cpu: Intel(R) Core(
 SYSTEM:,Windows,AMD64,ver: 10.0.19041,10,Zephyrus,CPU:,cpu: AMD Ryzen 7 5800HS with Radeon Graphics,physical: 8,threads: 16,MEMORY:,total: 15.42GB,used: 6.55GB,STORAGE:,"C:\, ",singleCPU: 445,multiCPU: 109,memory: 222
 SYSTEM:,Windows,AMD64,ver: 10.0.19041,10,Zephyrus,CPU:,cpu: AMD Ryzen 7 5800HS with Radeon Graphics,physical: 8,threads: 16,MEMORY:,total: 15.42GB,used: 7.01GB,STORAGE:,"C:\, ",singleCPU: 448,multiCPU: 152,memory: 222
 SYSTEM:,Windows,AMD64,ver: 10.0.19041,10,Zephyrus,CPU:,cpu: AMD Ryzen 7 5800HS with Radeon Graphics,physical: 8,threads: 16,MEMORY:,total: 15.42GB,used: 4.09GB,STORAGE:,"C:\, ",singleCPU: 267,multiCPU: 131,memory: 223
+SYSTEM:,Windows,AMD64,ver: 10.0.19041,10,Zephyrus,CPU:,cpu: AMD Ryzen 7 5800HS with Radeon Graphics,physical: 8,threads: 16,MEMORY:,total: 15.42GB,used: 5.65GB,STORAGE:,"C:\, ",singleCPU: 249,multiCPU: 136,memory: 223
