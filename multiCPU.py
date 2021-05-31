@@ -1,6 +1,6 @@
 def multiProcess():
     count = 0
-    while count < 5000: # run x amount of calculations (x can be adjusted to get diffrent scores)
+    while count < 10000: # run x amount of calculations (x can be adjusted to get diffrent scores)
          piValue = 2 ** count        #(2*increasing value) increasing value increases by 1 each loop and loops for x amount
          count += 1
 
