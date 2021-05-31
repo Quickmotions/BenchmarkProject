@@ -59,3 +59,4 @@ SYSTEM:,Linux,x86_64,ver: #488-Microsoft Mon Sep 01 13:43:00 PST 2020,4.4.0-1904
 SYSTEM:,Windows,AMD64,ver: 10.0.19043,10,Callum-Desktop,CPU:,cpu: Intel(R) Core(TM) i9-9900K CPU @ 3.60GHz,physical: 8,threads: 16,MEMORY:,total: 15.93GB,used: 8.06GB,STORAGE:,"C:\, D:\, E:\, ",singleCPU: 497,multiCPU: 1064,memory: 464
 SYSTEM:,Windows,AMD64,ver: 10.0.19041,10,Zephyrus,CPU:,cpu: AMD Ryzen 7 5800HS with Radeon Graphics,physical: 8,threads: 16,MEMORY:,total: 15.42GB,used: 6.55GB,STORAGE:,"C:\, ",singleCPU: 445,multiCPU: 109,memory: 222
 SYSTEM:,Windows,AMD64,ver: 10.0.19041,10,Zephyrus,CPU:,cpu: AMD Ryzen 7 5800HS with Radeon Graphics,physical: 8,threads: 16,MEMORY:,total: 15.42GB,used: 7.01GB,STORAGE:,"C:\, ",singleCPU: 448,multiCPU: 152,memory: 222
+SYSTEM:,Windows,AMD64,ver: 10.0.19041,10,Zephyrus,CPU:,cpu: AMD Ryzen 7 5800HS with Radeon Graphics,physical: 8,threads: 16,MEMORY:,total: 15.42GB,used: 4.09GB,STORAGE:,"C:\, ",singleCPU: 267,multiCPU: 131,memory: 223
