@@ -1,7 +1,6 @@
 import psutil
 partitions = psutil.disk_partitions()
-disks = []
-sizes = []
+
 
 def get_size(bytes, suffix="B"):
     """
@@ -17,6 +16,9 @@ def get_size(bytes, suffix="B"):
         bytes /= factor
 
 def runDiskTest():
+    print("DEBUG: begun diskTest")
+    disks = [""]
+    sizes = [""]
     for partition in partitions:
         disks.append(str(partition.device))
         try:
