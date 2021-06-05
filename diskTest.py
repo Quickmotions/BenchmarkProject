@@ -17,8 +17,8 @@ def get_size(bytes, suffix="B"):
 
 def runDiskTest():
     print("DEBUG: begun diskTest")
-    disks = [""]
-    sizes = [""]
+    disks = []
+    sizes = []
     for partition in partitions:
         disks.append(str(partition.device))
         try:

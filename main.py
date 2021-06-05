@@ -36,10 +36,10 @@ def main():
     results.append("memory: "+str(runMemoryTest()))
     changeTxt("Testing Disk Usage")                         #update ui
     disks, sizes = runDiskTest()
-    diskList = []
+    diskList = ""
     for disk in range(len(disks)):
-        diskList.append("(" + str(disks[disk]) + ":" + str(sizes[disk]) + ")")
-    results+=diskList
+        diskList += str(disks[disk]) + " : " + str(sizes[disk] + " | ")
+    results.append(diskList)
     time.sleep(1)  
     changeTxt("done in: " + str(round(time.perf_counter() - start, 2)) + " secs")     #update ui
     #store all the reults in the csv     
