@@ -32,13 +32,4 @@ def runGetComp():
   physCore = psutil.cpu_count(logical=False)
   allCore = psutil.cpu_count(logical=True)
 
- 
-  
-  partitions = psutil.disk_partitions()
-  storageDevice = ""
-  storageMount = ""
-  for partition in partitions:
-    storageDevice = storageDevice + partition.device + ", "
-    storageMount = storageMount + partition.mountpoint + ", "
-
-  return "SYSTEM:", system, node,"CPU:", cpuBrand, physCore, allCore,"MEMORY:", memTotal, memUsed,"STORAGE:", storageDevice
+  return "SYSTEM:", system, node,"CPU:", cpuBrand, physCore, allCore,"MEMORY:", memTotal, memUsed
