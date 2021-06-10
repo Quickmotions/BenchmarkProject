@@ -1,10 +1,10 @@
-def createKey():
-    from cryptography.fernet import Fernet  #import encryption package
+# def createKey():
+#     from cryptography.fernet import Fernet  #import encryption package
 
-    key = Fernet.generate_key() #create encryption key
+#     key = Fernet.generate_key() #create encryption key
     
-    with open('csv_files/filekey.key', 'wb') as filekey:  #open a key file
-        filekey.write(key)                      #write the key into the file (ex. key: J64ZHFpCWFlS9zT7y5zxuQN1Gb09y7cucne_EhuWyDM=)    
+#     with open('csv_files/filekey.key', 'wb') as filekey:  #open a key file
+#         filekey.write(key)                      #write the key into the file (ex. key: J64ZHFpCWFlS9zT7y5zxuQN1Gb09y7cucne_EhuWyDM=)    
 
         
         
@@ -38,7 +38,7 @@ def encryptResults(results):       #encrypt the file using fernet
 def runWriteCSV(results):
     print("DEBUG: begun writeCSV")
     import csv   #import csv read/writer
-    createKey()  #create a key and store it
+    # createKey()  #create a key and store it
     
     with open('csv_files/data_container.csv', 'a', newline ='') as file: #open/create new file
         file_writer = csv.writer(file)  #select csv writer
