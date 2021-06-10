@@ -69,6 +69,7 @@ SYSTEM:,Windows,Zephyrus,CPU:,cpu: AMD Ryzen 7 5800HS with Radeon Graphics,physi
 SYSTEM:,Windows,Zephyrus,CPU:,cpu: AMD Ryzen 7 5800HS with Radeon Graphics,physical: 8,threads: 16,MEMORY:,total: 15.41GB,used: 7.58GB,singleCPU: 461,multiCPU: 139,memory: 222,(:),(C:\:933.22GB)
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 SYSTEM:,Windows,Zephyrus,CPU:,cpu: AMD Ryzen 7 5800HS with Radeon Graphics,physical: 8,threads: 16,MEMORY:,total: 15.41GB,used: 7.07GB,singleCPU: 464,multiCPU: 806,memory: 317,C:\ : 933.22GB
 SYSTEM:,Windows,Zephyrus,CPU:,cpu: AMD Ryzen 7 5800HS with Radeon Graphics,physical: 8,threads: 16,MEMORY:,total: 15.41GB,used: 7.14GB,singleCPU: 470,multiCPU: 787,memory: 318,C,:,\, ,:, ,9,3,3,.,2,2,G,B
 SYSTEM:,Windows,Zephyrus,CPU:,cpu: AMD Ryzen 7 5800HS with Radeon Graphics,physical: 8,threads: 16,MEMORY:,total: 15.41GB,used: 7.09GB,singleCPU: 467,multiCPU: 813,memory: 315,C:\ : 933.22GB
@@ -81,6 +82,8 @@ SYSTEM:,Windows,Callum-Desktop,CPU:,cpu: Intel(R) Core(TM) i9-9900K CPU @ 3.60GH
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 SYSTEM:,Windows,Zephyrus,CPU:,cpu: AMD Ryzen 7 5800HS with Radeon Graphics,physical: 8,threads: 16,MEMORY:,total: 15.41GB,used: 7.07GB,singleCPU: 464,multiCPU: 806,memory: 317,C:\ : 933.22GB
 SYSTEM:,Windows,Zephyrus,CPU:,cpu: AMD Ryzen 7 5800HS with Radeon Graphics,physical: 8,threads: 16,MEMORY:,total: 15.41GB,used: 7.14GB,singleCPU: 470,multiCPU: 787,memory: 318,C,:,\, ,:, ,9,3,3,.,2,2,G,B
 SYSTEM:,Windows,Zephyrus,CPU:,cpu: AMD Ryzen 7 5800HS with Radeon Graphics,physical: 8,threads: 16,MEMORY:,total: 15.41GB,used: 7.09GB,singleCPU: 467,multiCPU: 813,memory: 315,C:\ : 933.22GB
@@ -91,6 +94,9 @@ SYSTEM:,Darwin,CallumsMBP13.local,CPU:,cpu: Intel(R) Core(TM) i5-1038NG7 CPU @ 2
 SYSTEM:,Darwin,CallumsMBP13.local,CPU:,cpu: Intel(R) Core(TM) i5-1038NG7 CPU @ 2.00GHz,physical: 4,threads: 8,MEMORY:,total: 16.00GB,used: 5.86GB,singleCPU: 2842,multiCPU: 529,memory: 200,/dev/disk1s1s1 : 465.63GB | /dev/disk1s5 : 465.63GB | /dev/disk1s3 : 465.63GB | /dev/disk1s6 : 465.63GB | /dev/disk1s2 : 465.63GB | 
 SYSTEM:,Windows,Zephyrus,CPU:,cpu: AMD Ryzen 7 5800HS with Radeon Graphics,physical: 8,threads: 16,MEMORY:,total: 15.41GB,used: 7.43GB,singleCPU: 503,multiCPU: 154,memory: 225,C:\ : 933.22GB | 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
