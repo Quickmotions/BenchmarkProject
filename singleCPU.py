@@ -1,3 +1,6 @@
+
+
+
 def runSingleCPU():
     print("DEBUG: begun singleCPU")
     import time
@@ -30,4 +33,3 @@ def runSingleCPU():
     print(avg)
     print(cpu)
     return avg #return the score and round to nearest whole
-
