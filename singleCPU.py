@@ -31,4 +31,3 @@ def runSingleCPU():
     print(cpu)
     return avg #return the score and round to nearest whole
 
-runSingleCPU()

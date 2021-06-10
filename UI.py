@@ -12,7 +12,7 @@ def changeTxt(txt):
 def createUI():
     from tkinter import Label
     import tkinter
-    from main import main
+    from main import mainProgram
     root = tkinter.Tk()
     frame = tkinter.Frame(root, bg='lightblue')
     root.geometry("450x200")
@@ -31,7 +31,7 @@ def createUI():
     
     slogan = tkinter.Button(frame,
                     text="START",
-                    command= main,
+                    command= mainProgram,
                     fg='blue',
                     width=20,
                     height=5,
@@ -46,3 +46,4 @@ def createUI():
     root.mainloop()
    
 
+createUI()

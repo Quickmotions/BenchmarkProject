@@ -1,22 +1,19 @@
 from subprocess import run
 
 
-try: #attempt to import all packages
-    from UI import *
-    from getComp import runGetComp
-    from singleCPU import runSingleCPU
-    from writeCSV import runWriteCSV
-    from memoryTest import runMemoryTest
-    from multiCPU import spawnMultiProcess
-    from diskTest import runDiskTest
-    import time
+#attempt to import all packages
+from UI import *
+from getComp import runGetComp
+from singleCPU import runSingleCPU
+from writeCSV import runWriteCSV
+from memoryTest import runMemoryTest
+from multiCPU import spawnMultiProcess
+from diskTest import runDiskTest
+import time
     
-except:
-    #error message and close program
-    print("missing packages")
-    exit()
 
-def main():
+
+def mainProgram():
     # start timer
     start = time.perf_counter() 
     #create array for all results
