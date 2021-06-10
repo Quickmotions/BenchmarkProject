@@ -41,7 +41,7 @@ def main():
         diskList += str(disks[disk]) + " : " + str(sizes[disk] + " | ")
     results.append(diskList)
     time.sleep(1)  
-    changeTxt("done in: " + str(round(time.perf_counter() - start, 2)) + " secs")     #update ui
+    changeTxt("done in: " + str(round(time.dperf_counter() - start, 2)) + " secs")     #update ui
     #store all the reults in the csv     
     runWriteCSV(results)
     time.sleep(1)   #wait 1 sec for user to read "done" text
