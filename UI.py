@@ -45,5 +45,3 @@ def createUI():
 
     root.mainloop()
    
-
-createUI()
