@@ -9,7 +9,7 @@ def runSingleCPU():
     starttime = time.time() # start timer
     count = 0
     score1 = 1
-    cpu = psutil.cpu_percent(interval=0.01)
+    cpu = psutil.cpu_percent(interval=0.0)
    
     while count < 50000: # run x amount of calculations (x can be adjusted to get diffrent scores)
         piValue = 2 ** count        #(2*increasing value) increasing value increases by 1 each loop and loops for x amount
@@ -22,9 +22,7 @@ def runSingleCPU():
         score = 10000
 
     while cpu < 100:
-            cpu = psutil.cpu_percent(interval=0.01)
+            cpu = psutil.cpu_percent(interval=0.0)
             num = 2**score1
             score1 += 1
     return round(score/10 + score1/10 / 2) #return the score and round to nearest whole
-
-runSingleCPU()
