@@ -1,15 +1,3 @@
 {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-    "python.pythonPath": "C:\\Program Files\\Python39\\python.exe"
-=======
-    "python.pythonPath": "C:\\Users\\fergu\\AppData\\Local\\Programs\\Python\\Python39\\python.exe"
->>>>>>> Stashed changes
-=======
-    "python.pythonPath": "C:\\Users\\fergu\\AppData\\Local\\Programs\\Python\\Python39\\python.exe"
->>>>>>> Stashed changes
-=======
-    "python.pythonPath": "C:\\Users\\fergu\\AppData\\Local\\Programs\\Python\\Python39\\python.exe"
->>>>>>> Stashed changes
+    "python.pythonPath": "/usr/local/bin/python3"
 }
